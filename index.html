@@ -7,56 +7,70 @@
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      font-family: 'Poppins', Arial, sans-serif;
+      background: linear-gradient(120deg, #1a2a6c, #b21f1f, #fdbb2d);
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      color: #fff;
     }
-    .container {
-      background: rgba(255, 255, 255, 0.1);
+
+    .card {
+      background: #fff;
       padding: 40px;
-      border-radius: 12px;
-      max-width: 600px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
       text-align: center;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      max-width: 650px;
+      animation: fadeIn 1.2s ease-in-out;
     }
-    h2 {
-      color: #ffcc00;
+
+    .card h2 {
+      font-size: 2rem;
+      color: #333;
       margin-bottom: 20px;
-      font-size: 1.8em;
     }
-    p {
-      font-size: 1.1em;
+
+    .card p {
+      font-size: 1.1rem;
+      color: #555;
       line-height: 1.6;
       margin-bottom: 30px;
     }
-    a {
+
+    .btn {
       display: inline-block;
       background: #1877f2;
       color: #fff;
-      padding: 12px 25px;
-      border-radius: 6px;
+      padding: 14px 28px;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 8px;
       text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
+      transition: all 0.3s ease;
     }
-    a:hover {
-      background: #145dbf;
+
+    .btn:hover {
+      background: #0f5cc0;
+      transform: translateY(-3px);
+      box-shadow: 0 6px 15px rgba(24, 119, 242, 0.5);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body>
-  <div class="container">
+  <div class="card">
     <h2>Liên hệ với chúng tôi</h2>
     <p>
       Quý khách hàng và đối tác vui lòng liên hệ với chúng tôi qua Facebook để trao đổi công việc, hợp tác.<br>
       Đội ngũ của chúng tôi luôn sẵn sàng hỗ trợ nhanh chóng và nhiệt tình!
     </p>
-    <a href="https://www.facebook.com/share/1CGEcU6fh3/?mibextid=wwXIfr" target="_blank">
-      👉 Liên hệ qua Facebook
+    <a href="https://www.facebook.com/share/1CGEcU6fh3/?mibextid=wwXIfr" target="_blank" class="btn">
+        Liên hệ qua Facebook
     </a>
   </div>
 </body>
